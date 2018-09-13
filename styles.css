@@ -1,0 +1,37 @@
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+  "nav header header"
+  "nav charts charts"
+  "nav main aside";
+  height: 550px;
+  grid-template-rows: 10vh 30vh 60vh;
+  grid-template-columns: 200px 2fr 1fr;
+}
+
+header {
+  grid-area: header;
+  background-color: red; 
+}
+
+nav {
+  grid-area: nav;
+  background: #354051;
+}
+
+.charts {
+  grid-area: charts;
+  background: blue;
+}
+
+main {
+  grid-area: main;
+  background: grey;
+}
+
+aside {
+  grid-area: aside;
+  background: pink;
+}
+
