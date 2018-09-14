@@ -7,51 +7,88 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">  
   <title>Static Comp Challenge 3</title>
 </head>
 <body>
 <section class="grid-container"> 
 <header>
-  <h1>header</h1>
+  <div class="header-div1">
+    <i class="fas fa-caret-left"></i>
+    <i class="fas fa-bars header-icon"></i>
+  </div>
+  <div class="header-div2">
+    <i class="fas fa-search"></i>
+    <input class="search" type="search" placeholder="Search for a job, task, or resume">
+  </div>
+  <div class="header-div1">
+    <i class="fas fa-user-plus header-icon"></i>
+  </div>
+  <div class="header-div1">
+    <i class="fas fa-calendar-plus header-icon"></i>
+  </div>
+  <div class="header-div1">
+    <i class="fas fa-th header-icon"></i>
+  </div>
 </header>
 <nav>
   <div class="nav-user">
-  <div class="picture"></div>
-  <p class="username">Mr. Fox</p>
+    <img  class="user-img" src="https://randomuser.me/api/portraits/men/51.jpg">
+  <h2 class="username">Newton Barley<i class="fas fa-angle-down"></i></h2>
   </div>
-  <div class="nav-main">
+  <div class="nav-main nav-section">
+    <h3>Main</h3>
     <p class="nav-main-p"><i class="fas fa-home"></i>HOME</p>
     <p class="nav-main-p"><i class="fas fa-briefcase"></i>
-Business
 JOBS</p>
     <p class="nav-main-p"><i class="fas fa-file"></i>
-Files
 RESUMES</p>
     <p class="nav-main-p"><i class="fas fa-clipboard-list"></i>
-Logistics
 TASKS</p>
     <p class="nav-main-p"><i class="fas fa-calendar-alt"></i>
-Status
 CALENDAR</p>
   </div>
-  <div class="nav-admin">
+  <div class="nav-admin nav-section">
+    <h3>Admin</h3>
     <p class="nav-main-p"><i class="fas fa-users"></i>
-Users & People
 USERS</p>
     <p class="nav-main-p"><i class="fas fa-map-marker"></i>
-Status
 LOCATIONS</p>
     <p class="nav-main-p"><i class="fas fa-sitemap"></i>WORKFLOWS</p>
-    <p class="nav-main-p"><i class="far fa-newspaper"></i>JOB BOARDS</p>
+    <p class="nav-main-p active"><i class="far fa-newspaper"></i>JOB BOARDS</p>
     <p class="nav-main-p"><i class="fas fa-poo"></i>SOCIAL</p>
   </div>
-  <div class="nav-categories">
-    <p class="nav-main-p"><i class="fas fa-check-square"></i>Administrative</p>
-    <p class="nav-main-p"><i class="fas fa-square"></i>Design</p>
-    <p class="nav-main-p"><i class="fas fa-square"></i>Executive</p>
-    <p class="nav-main-p"><i class="fas fa-square"></i>Human Resources</p>
+  <div class="nav-categories nav-section">
+    <h3>Categories</h3>
+    <p class="nav-main-p 1"><i class="fas fa-check-square"></i>Administrative</p>
+    <p class="nav-main-p 2"><i class="fas fa-square i2"></i>Design</p>
+    <p class="nav-main-p 3"><i class="fas fa-square i3"></i>Executive</p>
+    <p class="nav-main-p 4"><i class="fas fa-square i4"></i>Human Resources</p>
   </div>
 </nav>
+<section class="page-header">
+  <div class="job-title">
+    <div>
+      <h1>Font-End Web Designer</h1>
+      <h4 class="job-location"><i class="fas fa-map-marker-alt"></i>Portland, OR <i class="fas fa-circle small-dot"></i><span> Preview this post</span></h4>
+    </div>
+    <div class="page-icon-div">
+      <h6 class="open-icon"><i class="fas fa-circle"></i>OPEN</h6>
+      <h6 class="page-header-icons"><i class="fas fa-bookmark "></i></h6>
+      <h6 class="page-header-icons"><i class="fas fa-pencil-alt"></i></h6>
+      <h6 class="page-header-icons"><i class="fas fa-trash-alt"></i></h6>
+    </div>
+  </div>
+  <div class="job-nav">
+    <p class="job-nav-item job-active">SUMMARY</p>
+    <p class="job-nav-item">APPLICANTS</p>
+    <p class="job-nav-item">JOB BOARD</p>
+    <p class="job-nav-item">INTERVIEW</p>
+    <p class="job-nav-item">ACTIVITY</p>
+    <p class="job-nav-item">BROADCAST</p>
+    <p class="job-nav-item">NOTIFICATIONS</p>
+  </div>
+</section>
 <section class= "charts">
   <h1>charts</h1>
 </section>

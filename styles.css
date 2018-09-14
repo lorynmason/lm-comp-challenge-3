@@ -1,28 +1,270 @@
+/*page layout*/
+body {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  }
+
 .grid-container {
   width: 100%;
   display: grid;
   grid-template-areas:
   "nav header header"
+  "nav pageheader pageheader"
   "nav charts charts"
   "nav main aside";
-  height: 550px;
-  grid-template-rows: 10vh 30vh 60vh;
+  grid-template-rows: 10vh 30vh 40vh 70vh;
   grid-template-columns: 200px 2fr 1fr;
 }
 
-header {
-  grid-area: header;
-  background-color: red; 
-}
+/*nav*/
 
 nav {
   grid-area: nav;
   background: #354051;
+  color: rgb(163 172 189);
 }
+
+.nav-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-img {
+  border-radius: 50%;
+  margin: 20px 0px 20px;
+  height: 90px;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+h3 {
+color: rgb(103 116 132);
+padding: 30px 0px 15px 19px;
+font-size: .9rem;
+font-weight: 400;
+}
+
+h2:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+nav p {
+padding: 6px 0px 6px 10px;
+border-left: 2px solid #354051;
+font-weight: 600;
+}
+
+i {
+  padding: 2px 5px 2px 10px;
+}
+
+.nav-section {
+  border-top: 2px solid #212F44;
+  margin-top: 30px;
+}
+
+nav p:hover {
+  border-left: 2px solid #13CFF5;
+  background: #212F44;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.active {
+  border-left: 2px solid #13CFF5;
+  background: #212F44;
+  color: #ffffff;
+}
+
+.fa-check-square {
+  color: #F6E503;
+}
+
+.i2 {
+  color: #13CFF5;
+}
+
+.i3 {
+  color: #FA2A0F;
+}
+
+.i4 {
+  color: #0FFA71;
+}
+
+/*header*/
+
+header {
+  grid-area: header;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #81888D;
+}
+
+.header-div1 {
+  width: 99px;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-div1:hover {
+  color: #ffffff;
+  background: #13CFF5;
+  border: 1px solid #13CFF5;
+}
+
+.header-div2 {
+  width: 80vw;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  align-items: center;
+  color: #B6BDC2;
+}
+
+.search {
+  border: none;
+  height: 40px;
+  width: 90%;
+  color: #6F7376;
+  font-size: 1.6em;
+  padding-left: 2px;
+}
+
+::placeholder {
+  color: #B6BDC2;
+}
+
+.fa-search {
+  font-size: 1.3em;
+}
+
+ .header-icon {
+  font-size: 1.6em
+}
+
+.fa-caret-left {
+  color: #13CFF5;
+  padding-right: 2px;
+  font-size: 1.3em;
+  padding-left: 0px;
+}
+
+.fa-bars {
+  padding-left: 0px;
+}
+
+/*page-header*/
+.page-header {
+  grid-area: pageheader;
+  border-bottom: 2px solid #EAEAEA;
+}
+
+.job-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 2.4em;
+  margin: 20px 0px 10px 40px;
+  color: #5D5959;
+}
+
+.job-location {
+  margin: 5px 0px 0px 32px;
+  color: #807e7e;
+}
+
+h4 span {
+  color: #13CFF5;
+}
+
+.small-dot {
+  font-size: .2em;
+  position: relative;
+  bottom: 3px;
+  color: #DEDDDD;
+}
+
+.page-icon-div {
+  display: flex;
+  float: right;
+  margin: 20px 35px 20px 0px;
+}
+
+.open-icon {
+  border: 2px solid #B6BDC2;
+  width: 80px;
+  border-radius: 30px;
+  padding: 8px 9px 4px;
+  margin: 5px;
+  font-weight: 400;
+  color: #5D5959;
+}
+
+.open-icon .fas {
+  font-size: .8em;
+  color: #34DF1A;
+}
+
+.page-header-icons {
+  border: 2px solid #B6BDC2;
+  width: 22px;
+  border-radius: 50%;
+  padding: 6px;
+  text-align: center;
+  margin: 5px;
+  color: #B6BDC2;
+}
+
+.fa-bookmark {
+  margin-left: -5px;
+}
+
+.fa-trash-alt {
+  margin-left: -6px;
+}
+
+.fa-pencil-alt {
+  margin-left: -7px;
+}
+
+.job-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 15vw 20px 45px;
+  font-weight: 600;
+}
+
+.job-nav-item {
+  color: #B6BDC2;
+  padding-bottom: 18px;
+  border-bottom: 3px solid #ffffff;
+}
+
+.job-active, .job-nav-item:hover {
+  border-bottom: 3px solid #13CFF5;
+  color: #5D5959;
+}
+
+
+/*charts*/
 
 .charts {
   grid-area: charts;
-  background: blue;
+  background: #edf2f6;
 }
 
 main {
@@ -34,4 +276,3 @@ aside {
   grid-area: aside;
   background: pink;
 }
-
