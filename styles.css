@@ -35,8 +35,8 @@ nav {
 
 .user-img {
   border-radius: 50%;
-  margin: 20px 0px 20px;
-  height: 90px;
+  margin: 30px 0px 20px;
+  height: 80px;
 }
 
 h2 {
@@ -209,7 +209,7 @@ h4 span {
   width: 80px;
   border-radius: 30px;
   padding: 8px 9px 4px;
-  margin: 5px;
+  margin: 5px 10px;
   font-weight: 400;
   color: #5D5959;
 }
@@ -225,7 +225,7 @@ h4 span {
   border-radius: 50%;
   padding: 6px;
   text-align: center;
-  margin: 5px;
+  margin: 5px 10px;
   color: #B6BDC2;
 }
 
@@ -269,7 +269,7 @@ h4 span {
 
 main {
   grid-area: main;
-  background: grey;
+  background: #edf2f6;
 }
 
 aside {
