@@ -416,6 +416,7 @@ main {
 
 .edit:hover {
   background: #13CFF5;
+  cursor: pointer;
 }
 
 .table-item-name {
@@ -487,9 +488,9 @@ aside {
 }
 
 .job-link p {
- background: #ffffff;
- width: 207px;
- padding: 10px;
+   background: #ffffff;
+   width: 207px;
+   padding: 10px;
  }
 
 .copy-btn {
@@ -535,7 +536,7 @@ h5 {
   }
 
   .fa-caret-left {
-    display: none; 
+    color: #dbe0e4; 
   }
 
 }
@@ -561,14 +562,14 @@ h5 {
     grid-template-areas: 
     "linkjob buttonwidget emailresume"
     "socialmedia socialmedia socialmedia";
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 3fr .8fr;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .social-media-bars {
     display: flex;
     grid-area: socialmedia;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .link-job {
@@ -585,7 +586,7 @@ h5 {
   }
 
   .social-media {
-    margin: 20px 10px 20px 10px;
+    margin: 0px 10px 50px 10px;
     padding: 18px 70px 18px 20px;
     display: flex;
     justify-content: space-around;
@@ -593,7 +594,35 @@ h5 {
 
   .aside-section {
     border-bottom: none;
-    margin: 50px 10px 0px ;
-  } 
+    margin-top: 50px;
+    border-right: 1px solid #dbe0e4;
+    padding: 0px 5px 0px 5px;
+    width: 90%;
+    margin: 50px 0px 70px 0px;
+  }
+
+  .aside-section p {
+    width: 90%;
+  }
+
+  .job-link p {
+    background: #ffffff;
+    overflow-x: scroll;
+  }
+
+  .email-resume {
+    border-right: none;
+  }
+
+  .link-job {
+    padding-left: 20px;
+  }
 
 }
+
+@media (max-width: 865px) {
+
+}
+
+
+
