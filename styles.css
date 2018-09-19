@@ -4,10 +4,9 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  }
+}
 
 .grid-container {
-  width: 100%;
   display: grid;
   grid-template-areas:
   "nav header header"
@@ -15,29 +14,30 @@ body {
   "nav charts charts"
   "nav pagebreak pagebreak"
   "nav main aside";
-  grid-template-rows: 1fr 2.5fr 3.5fr .6fr 11fr;
   grid-template-columns: 200px 3fr 1fr;
+  grid-template-rows: 1fr 2.5fr 3.5fr .6fr 11fr;
+  width: 100%;
 }
 
 /*nav*/
 
 nav {
-  grid-area: nav;
   background: #354051;
   color: rgb(163 172 189);
+  grid-area: nav;
 }
 
 .nav-user {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .user-img {
   border-radius: 50%;
-  margin: 30px 0px 20px;
   height: 80px;
+  margin: 30px 0px 20px;
 }
 
 h2 {
@@ -46,9 +46,9 @@ h2 {
 
 h3 {
 color: rgb(103 116 132);
-padding: 30px 0px 15px 19px;
 font-size: 1rem;
 font-weight: 400;
+padding: 30px 0px 15px 19px;
 }
 
 h2:hover {
@@ -57,9 +57,9 @@ h2:hover {
 }
 
 nav p {
-padding: 10px 0px 10px 10px;
 border-left: 2px solid #354051;
 font-weight: 600;
+padding: 10px 0px 10px 10px;
 }
 
 i {
@@ -72,15 +72,15 @@ i {
 }
 
 nav p:hover {
-  border-left: 2px solid #13CFF5;
   background: #212F44;
+  border-left: 2px solid #13CFF5;
   color: #ffffff;
   cursor: pointer;
 }
 
 .active {
-  border-left: 2px solid #13CFF5;
   background: #212F44;
+  border-left: 2px solid #13CFF5;
   color: #ffffff;
 }
 
@@ -103,20 +103,20 @@ nav p:hover {
 /*header*/
 
 header {
-  grid-area: header;
   background-color: #ffffff;
+  color: #81888D;
   display: flex;
   flex-direction: row;
+  grid-area: header;
   justify-content: space-between;
-  color: #81888D;
 }
 
 .header-div1 {
-  width: 99px;
+  align-items: center;
   border: 1px solid #EAEAEA;
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 99px;
 }
 
 .header-div1:hover .fa-caret-left,
@@ -132,20 +132,20 @@ header {
 }
 
 .header-div2 {
-  width: 80vw;
-  border: 1px solid #EAEAEA;
-  display: flex;
   align-items: center;
+  border: 1px solid #EAEAEA;
   color: #B6BDC2;
+  display: flex;
+  width: 80vw;
 }
 
 .search {
   border: none;
-  height: 40px;
-  width: 90%;
   color: #6F7376;
   font-size: 1.6rem;
+  height: 40px;
   padding-left: 2px;
+  width: 90%;
 }
 
 ::placeholder {
@@ -162,9 +162,9 @@ header {
 
 .fa-caret-left {
   color: #13CFF5;
-  padding-right: 2px;
   font-size: 1.3rem;
   padding-left: 0px;
+  padding-right: 2px;
 }
 
 .fa-bars {
@@ -173,11 +173,11 @@ header {
 
 /*page-header*/
 .page-header {
-  grid-area: pageheader;
+  align-self: end;
   border-bottom: 2px solid #EAEAEA;
   display: flex;
   flex-direction: column;
-  align-self: end;
+  grid-area: pageheader;
 }
 
 .job-title {
@@ -187,14 +187,14 @@ header {
 }
 
 h1 {
+  color: #5D5959;
   font-size: 2.4em;
   margin: 10px 0px 10px 40px;
-  color: #5D5959;
 }
 
 .job-location {
-  margin: 5px 0px 0px 32px;
   color: #807e7e;
+  margin: 5px 0px 0px 32px;
 }
 
 h4 span {
@@ -202,10 +202,10 @@ h4 span {
 }
 
 .small-dot {
-  font-size: .2rem;
-  position: relative;
   bottom: 3px;
   color: #DEDDDD;
+  font-size: .2rem;
+  position: relative;
 }
 
 .page-icon-div {
@@ -215,28 +215,28 @@ h4 span {
 }
 
 .open-icon {
-  border: 2px solid #B6BDC2;
-  width: 80px;
   border-radius: 30px;
-  padding: 8px 9px 4px;
-  margin: 5px 10px;
-  font-weight: 400;
+  border: 2px solid #B6BDC2;
   color: #5d6774;
+  font-weight: 400;
+  margin: 5px 10px;
+  padding: 8px 9px 4px;
+  width: 80px;
 }
 
 .open-icon .fas {
-  font-size: .8rem;
   color: #34DF1A;
+  font-size: .8rem;
 }
 
 .page-header-icons {
-  border: 2px solid #B6BDC2;
-  width: 22px;
   border-radius: 50%;
+  border: 2px solid #B6BDC2;
+  color: #B6BDC2;
+  margin: 5px 10px;
   padding: 6px;
   text-align: center;
-  margin: 5px 10px;
-  color: #B6BDC2;
+  width: 22px;
 }
 
 .fa-bookmark {
@@ -253,15 +253,15 @@ h4 span {
 
 .job-nav {
   display: flex;
+  font-weight: 600;
   justify-content: space-between;
   padding: 51px 15vw 0px 45px;
-  font-weight: 600;
 }
 
 .job-nav-item {
   color: #B6BDC2;
-  padding-bottom: 18px;
   border-bottom: 3px solid #ffffff;
+  padding-bottom: 18px;
 }
 
 .job-active, .job-nav-item:hover {
@@ -271,8 +271,8 @@ h4 span {
 }
 
 .page-header-icons:hover {
-  color: #13CFF5;
   border: 2px solid #13CFF5;
+  color: #13CFF5;
   cursor: pointer;
 }
 
@@ -283,22 +283,22 @@ h4 span {
 /*charts*/
 
 .charts {
-  grid-area: charts;
   background: #edf2f6;
   display: flex;
+  grid-area: charts;
   justify-content: space-evenly;
 }
 
 .chart-container-circle {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .circle-charts {
+  display: flex;
   height: 230px;
   margin: 50px 10px 0px 40px;
-  display: flex;
 }
 
 .circle-chart-div {
@@ -324,13 +324,13 @@ text {
 }
 
 .chart-info-icon {
-  border: 2px solid #B6BDC2;
-  border-radius: 30px;
-  padding: 8px 4px 8px;
-  margin: 0px 10px;
-  font-weight: 400;
-  color: #5d6774;
   background: #ffffff;
+  border-radius: 30px;
+  border: 2px solid #B6BDC2;
+  color: #5d6774;
+  font-weight: 400;
+  margin: 0px 10px;
+  padding: 8px 4px 8px;
   text-align: center;
 }
 
@@ -376,9 +376,9 @@ text {
 }
 
 .fa-arrow-alt-circle-up {
+  color: #B6BDC2;
   font-size: 2.3rem;
   padding-top: 25px;
-  color: #B6BDC2;
 }
 
 .fa-arrow-alt-circle-up:hover {
@@ -388,39 +388,39 @@ text {
 /*main*/
 
 main {
-  grid-area: main;
   background: #edf2f6;
   display: grid;
+  grid-area: main;
   justify-items: center;
 }
 
 .table {
+  background: #ffffff;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  width: 90%;
-  background: #ffffff;
   margin: 50px 0px 50px 0px;
+  width: 90%;
 }
 
 .table p {
-  padding: 30px 0px;
   border-bottom: 1px solid #dbe0e4;
   color: #92969b;
+  padding: 30px 0px;
 }
 
 .table-header {
-  grid-column: span 2;
   background: #6e7e95;
   color: #ffffff;
-  padding:30px 0px 30px 30px;
   font-weight: 600;
+  grid-column: span 2;
+  padding:30px 0px 30px 30px;
 }
 
 .edit {
   background: #7c8aa5;
+  font-weight: 600;
   margin-left: 20px;
   padding: 8px 18px 8px 8px;
-  font-weight: 600;
 }
 
 .edit:hover {
@@ -429,13 +429,13 @@ main {
 }
 
 .table-item-name {
-  margin-left: 30px;
   font-weight: 600;
+  margin-left: 30px;
 }
 
 .table-item-value {
-  margin-right: 30px;
   font-weight: 400;
+  margin-right: 30px;
 }
 
 #bottom-item {
@@ -448,27 +448,27 @@ main {
 }
 
 .table-item-value span {
-  vertical-align: 62%;
   margin-left: 20px;
+  vertical-align: 62%;
 }
 /*aside*/
 
 aside {
-  grid-area: aside;
   background: #edf2f6;
   display: flex;
   flex-direction: column;
+  grid-area: aside;
 }
 
 .social-media {
   background: #4b6fc2;
+  color: #ffffff;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 600;
+  justify-content: space-between;
   margin: 20px 80px 20px 0px;
   padding: 18px 70px 18px 20px;
-  display: flex;
-  justify-content: space-between;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1.1rem;
 }
 
 .facebook {
@@ -485,15 +485,15 @@ aside {
 
 .aside-section {
   border-bottom: 1px solid #dbe0e4;
-  margin: 10px 80px 10px 0px;
   color: #5D5959;
+  margin: 10px 80px 10px 0px;
 }
 
 .job-link {
-  margin-bottom: 10px;
-  padding: 20px 25px 25px 0px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 20px 25px 25px 0px;
 }
 
 .job-link p {
@@ -504,10 +504,10 @@ aside {
 
 .copy-btn {
   background: #49bac2;
-  padding: 10px 15px;
   border: none;
   color: #ffffff;
   font-size: 1rem;
+  padding: 10px 15px;
 }
 
 h5 {
@@ -538,8 +538,8 @@ h5 {
     "charts charts"
     "pagebreak pagebreak"
     "main aside";
-    grid-template-rows: 1fr 2.5fr 3.5fr .6fr 11fr;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2.5fr 3.5fr .6fr 11fr;
   }
 
   nav {
@@ -573,8 +573,8 @@ h5 {
     grid-template-areas: 
     "socialmedia socialmedia socialmedia"
     "linkjob buttonwidget emailresume";
-    grid-template-rows: .8fr 3fr;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .8fr 3fr;
   }
 
   .social-media-bars {
@@ -597,18 +597,18 @@ h5 {
   }
 
   .social-media {
+    display: flex;
     margin: 0px 10px 50px 10px;
     padding: 18px 70px 18px 20px;
-    display: flex;
     justify-content: space-around;
   } 
 
   .aside-section {
     border-bottom: none;
-    margin-top: 50px;
     border-right: 1px solid #dbe0e4;
-    padding: 0px 0px 0px 10px;
+    margin-top: 50px;
     margin: 50px 0px 90px 0px;
+    padding: 0px 0px 0px 10px;
   }
 
   .aside-section p {
@@ -642,10 +642,10 @@ aside {
 }
 
 .aside-section {
-  padding: 15px 0px 0px 0px;
-  margin: 0px 10vw 0px 10vw;
-  border-right: none;
   border-bottom: 1px solid #dbe0e4;
+  border-right: none;
+  margin: 0px 10vw 0px 10vw;
+  padding: 15px 0px 0px 0px;
 }
 
 .grid-container {
@@ -704,19 +704,19 @@ aside {
 }
 
 @media (max-width: 580px) {
-.social-media p {
-  display: none;
-}
+  .social-media p {
+    display: none;
+  }
 
-.social-media {
-  font-size: 3rem;
-  margin: 0px 10px 10px 10px;
-  padding: 0px 0px 0px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-}
+  .social-media {
+    align-items: center;
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    margin: 0px 10px 10px 10px;
+    padding: 0px 0px 0px 0px;
+    width: 100px;
+  }
 }
 
 @media (max-width: 466px) {
